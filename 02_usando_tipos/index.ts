@@ -31,3 +31,14 @@ console.log(arrayLetrasENumeros);
 // tuplas
 let endereco: [string, number] = ["Rua dos Bobos", 0];
 console.log(endereco);
+
+// enums
+enum Cor {
+  Cinza = 100,
+  Verde,
+  Azul,
+}
+
+let minhaCor: Cor = Cor.Cinza;
+console.log(minhaCor);
+console.log(Cor.Verde, Cor.Azul);
