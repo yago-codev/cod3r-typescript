@@ -1,0 +1,64 @@
+01) Criar o arquivo HTML:
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TypeScirpt</title>
+    </head>
+    <body>
+
+    </body>
+    </html>
+
+02) Linkando o script JS transpilado:
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TypeScirpt</title>
+    </head>
+    <body>
+
+      <script src="./basico.js"></script> <==
+    </body>
+    </html>
+
+03) Gerando o package.json:
+
+    npm init -y
+
+04) Instalando o Live Server para assistir as mudanças e restartar o browser:
+
+    npm i -s live-server
+
+05) Criando o script para acionar o live-server:
+
+    {
+      "name": "modulo01",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "directories": {
+        "doc": "doc"
+      },
+      "scripts": { <==
+        "start": "live-server" <==
+      }, <==
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+        "live-server": "^1.2.1"
+      }
+    }
+
+06) Monitorando/compilando automaticamente os arquivos TS:
+
+    OBS: É preciso estar na raíz do projeto:
+
+    Comando:
+    tsc *.ts -w
