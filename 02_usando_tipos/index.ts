@@ -27,3 +27,7 @@ console.log(receboSomenteNumeros);
 let arrayLetrasENumeros: any[] = ["a", "b", "c"];
 arrayLetrasENumeros.push(1);
 console.log(arrayLetrasENumeros);
+
+// tuplas
+let endereco: [string, number] = ["Rua dos Bobos", 0];
+console.log(endereco);
