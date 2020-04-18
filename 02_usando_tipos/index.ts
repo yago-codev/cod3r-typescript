@@ -22,3 +22,8 @@ console.log(receboQualquerTipo);
 let receboSomenteNumeros: number;
 receboSomenteNumeros = 1;
 console.log(receboSomenteNumeros);
+
+// array: tipagem explícita
+let arrayLetrasENumeros: any[] = ["a", "b", "c"];
+arrayLetrasENumeros.push(1);
+console.log(arrayLetrasENumeros);
