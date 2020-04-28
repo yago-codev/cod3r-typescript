@@ -48,3 +48,22 @@ let carro: any = "BWM";
 console.log(carro);
 carro = { marca: "BMW", ano: 2019 };
 console.log(carro);
+
+// usando tipos em funções (parâmetros e retorno)
+function retornaMeuNome(): string {
+  // return minhaIdade; // vai retornar erro porque "minhaIdade" é um "number"
+  return nome;
+}
+console.log(retornaMeuNome());
+
+// usando o "void" para funções que não possuem retorno:
+// "void" significa "vazio"
+function digaOi(): void {
+  console.log("oi");
+}
+digaOi();
+
+function multiplicar(numA: number, numB: number): number {
+  return numA * numB;
+}
+console.log(multiplicar(2, 2));
