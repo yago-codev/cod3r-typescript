@@ -40,5 +40,11 @@ enum Cor {
 }
 
 let minhaCor: Cor = Cor.Cinza;
-console.log(minhaCor);
-console.log(Cor.Verde, Cor.Azul);
+console.log(minhaCor); // 100
+console.log(Cor.Verde, Cor.Azul); // 101, 102
+
+// any
+let carro: any = "BWM";
+console.log(carro);
+carro = { marca: "BMW", ano: 2019 };
+console.log(carro);
