@@ -67,3 +67,11 @@ function multiplicar(numA: number, numB: number): number {
   return numA * numB;
 }
 console.log(multiplicar(2, 2));
+
+// funções como tipos
+let calculo: (numeroA: number, numeroB: number) => number;
+// calculo = digaOi;
+// calculo();
+
+calculo = multiplicar;
+console.log(calculo(5, 6));
